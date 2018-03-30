@@ -136,7 +136,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/button"
                 android:text="@string/sign_up"
-                android:textColor="@android:color/darker_gray"
+                android:textColor="@android:color/background_dark"
                 android:textStyle="bold"
                 android:textAllCaps="false"
                 android:layout_gravity="center"
