@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abhis.kushideaapp.MainActivity">
+
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/formBack"
+       android:src="@drawable/back"
+       android:scaleType="centerCrop"
+       android:contentDescription="@string/todo" />
+
+   <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/trans_white_rectangle"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/get_started"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/just_a_few_details_to_get_you_started"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_marginBottom="30dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"/>
+
+
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/email"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:id="@+id/userEmail"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/ic_email_black_24dp" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/phone"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:id="@+id/userPhone"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/ic_phone_android_black_24dp" />
+
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/password"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_action_lock"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:id="@+id/userPassword"
+                android:paddingLeft="10dp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/ic_action_lock" />
+
+            <AutoCompleteTextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="@string/confirm_password"
+                android:background="@drawable/rounded_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_action_star"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:id="@+id/userCPassword"
+                android:paddingLeft="10dp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/ic_action_star" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButton"
+                android:text="@string/i_agree_to_the_terms_and_conditions"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:textSize="12sp"
+                android:paddingStart="5dp"
+                android:paddingBottom="10dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:text="@string/sign_up"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:textSize="17sp"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:background="@drawable/rounded_white"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"/>
+
+        </LinearLayout>
+   </ScrollView>
+</RelativeLayout>
